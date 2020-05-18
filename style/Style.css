@@ -1,0 +1,56 @@
+
+header{
+    text-align: center;
+    background-color: cyan;
+    font-size: 40px;
+    border: 20px;
+    box-shadow: 6px 6px 0px grey;
+    color: white;
+    font-family: optima,sans-serif;
+    margin-bottom: 30px;
+}
+#cadre{
+    
+    width: 960px;
+    height: 600px;    
+    margin: auto;   
+    border:2px solid #0571C4;
+    position: relative;
+
+}
+#paddle{
+    
+    background-color: blue;
+    position: absolute;
+    top: 584px;   
+}
+#ball{
+    
+    background-color: blue;
+    border-radius: 24px;
+    position: absolute;
+   
+}
+.brick{
+    background-color: darkred;
+    outline:1px solid black;
+    position: absolute;
+}
+#etat{
+    color: red;
+}
+#start{   
+    
+    left: 419px;
+     top: 300px;
+    position:absolute;
+    
+}
+#score{
+    text-align: center;
+}
+#gagne{
+    left: 419px;
+     top: 400px;
+    position:absolute;
+}

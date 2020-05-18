@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/Style.css">
+    <script src="js/model/Sprite.js"></script>    
+    <script src="js/model/Brick.js"></script>
+    <script src="js/model/Dimensions.js"></script>
+    <script src="js/model/Paddle.js"></script>
+    <script src="js/view/View.js"></script>
+    <script src="js/controller/PaddleCtrl.js"> </script>
+    <script src="js/Constante.js"></script>
+    <script src="js/model/Ball.js"></script>
+    <script src="js/model/Position.js"></script>
+    <script src="js/model/Movement.js"></script>
+    <script src="js/controller/BallCtrl.js"></script>
+    <script src="js/model/Game.js"></script>
+    <script src="js/controller/GameCtrl.js"></script> 
+    <script src="js/model/Player.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>Casse Brique ! <br> Webg2-g55085-Geller Thomas</header>
+    <div id="etat"> 
+        <span id="score" ></span> 
+        <span id="vie"></span>
+    </div>
+      
+    <div id="cadre">
+        <p id="gagne"></p>
+          <p id ="start" >click to start</p>
+    </div>
+    
+
+</body>
+    <script> 
+    let game = new Game();    
+    let view = new View();    
+    let gameCtrl = new GameCtrl(game,view);      
+    gameCtrl.play();         
+    </script>
+    
+
+</html>
